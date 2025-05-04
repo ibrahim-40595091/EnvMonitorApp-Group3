@@ -66,6 +66,9 @@
 	  <Compile Update="Views\LoginPage.xaml.cs">
 	    <DependentUpon>LoginPage.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Views\FaultReportingPage.xaml.cs">
+	    <DependentUpon>FaultReportingPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Views\UserManagementPage.xaml.cs">
 	    <DependentUpon>UserManagementPage.xaml</DependentUpon>
 	  </Compile>
@@ -73,6 +76,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="Views\LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\FaultReportingPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\UserManagementPage.xaml">

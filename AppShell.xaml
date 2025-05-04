@@ -23,5 +23,10 @@
         ContentTemplate="{DataTemplate views:UserManagementPage}"
         Route="UserManagementPage" />
 
+    <ShellContent Title="Fault Reporting"
+              ContentTemplate="{DataTemplate views:FaultReportingPage}"
+              Route="FaultReportingPage" />
+
+
 
 </Shell>

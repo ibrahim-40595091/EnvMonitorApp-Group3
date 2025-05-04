@@ -10,6 +10,7 @@ namespace MauiApp1.Models
         public double Longtitude{get; set;}
         public DateTime? MaintenanceDate {get; set;}
 
+        public bool IsFaulty { get; set; } = false;
 
         public Sensor(string name, double latitude, double longtitude){
             this.Name = name;

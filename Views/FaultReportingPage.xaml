@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:MauiApp1.ViewModels"
+             x:Class="MauiApp1.Views.FaultReportingPage"
+             Title="Faulty Sensors">
+
+    <VerticalStackLayout Padding="15" Spacing="10">
+
+        <Label Text="⚠️ Faulty Sensors" FontSize="20" FontAttributes="Bold" />
+
+        <CollectionView ItemsSource="{Binding FaultySensors}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BorderColor="Red" Padding="10">
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Name}" FontAttributes="Bold" />
+                            <Label Text="{Binding LocationDisplay}" />
+
+                            <Button Text="Resolve"
+                                    BackgroundColor="Green"
+                                    TextColor="White"
+                                    Clicked="OnResolveClicked"
+                                    CommandParameter="{Binding}" />
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Label Text="🟢 Working Sensors" FontSize="20" FontAttributes="Bold" />
+
+        <CollectionView ItemsSource="{Binding WorkingSensors}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BorderColor="Gray" Padding="10">
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Name}" FontAttributes="Bold" />
+                            <Label Text="{Binding LocationDisplay}" />
+
+                            <Button Text="Report Fault"
+                                    BackgroundColor="Purple"
+                                    TextColor="White"
+                                    Clicked="OnReportFaultClicked"
+                                    CommandParameter="{Binding}" />
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </VerticalStackLayout>
+</ContentPage>

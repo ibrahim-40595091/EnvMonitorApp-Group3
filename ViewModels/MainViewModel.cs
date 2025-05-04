@@ -6,6 +6,7 @@ namespace MauiApp1.ViewModels
     public class MainViewModel
     {
         public ObservableCollection<Sensor> Sensors { get; set; }
+        public IEnumerable<Sensor> FaultySensors => Sensors.Where(s => s.IsFaulty);
 
         public MainViewModel()
         {
