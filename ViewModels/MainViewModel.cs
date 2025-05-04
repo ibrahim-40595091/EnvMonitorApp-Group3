@@ -9,7 +9,7 @@ namespace MauiApp1.ViewModels
 
         public MainViewModel()
         {
-            // 1. Create sensors
+
             
             var airSensor = new AirQualitySensor(55.9448, -3.1878); 
             var waterSensor = new WaterQualitySensor(55.8611, -3.2539); 
