@@ -59,3 +59,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Views.SettingsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\SettingsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\SettingsPage.xaml
+
+[C:/Users/ibrah/Source/Repos/EnvMonitorApp-Group3/Views/UserManagementPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Views.UserManagementPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\UserManagementPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\UserManagementPage.xaml

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:MauiApp1.ViewModels"
+             x:Class="MauiApp1.Views.UserManagementPage"
+             Title="User Management">
+
+    <ContentPage.BindingContext>
+        <vm:UserViewModel />
+    </ContentPage.BindingContext>
+
+    <VerticalStackLayout Padding="15" Spacing="10">
+
+        <!-- List of current users -->
+        <CollectionView ItemsSource="{Binding Users}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BorderColor="Gray" Padding="10">
+                        <HorizontalStackLayout>
+                            <Label Text="{Binding Name}" FontAttributes="Bold" WidthRequest="120"/>
+                            <Label Text="{Binding Role}" WidthRequest="100"/>
+                        </HorizontalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- Add new user -->
+        <HorizontalStackLayout>
+            <Entry x:Name="NewUserName" Placeholder="Name" WidthRequest="120"/>
+            <Entry x:Name="NewUserRole" Placeholder="Role" WidthRequest="100"/>
+            <Button Text="Add" Clicked="OnAddUserClicked"/>
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

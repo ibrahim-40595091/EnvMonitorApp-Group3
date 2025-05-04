@@ -17,5 +17,11 @@
         Title="Settings"
         ContentTemplate="{DataTemplate views:SettingsPage}"
         Route="SettingsPage" />
+    
+    <ShellContent
+        Title="Users"
+        ContentTemplate="{DataTemplate views:UserManagementPage}"
+        Route="UserManagementPage" />
+
 
 </Shell>
