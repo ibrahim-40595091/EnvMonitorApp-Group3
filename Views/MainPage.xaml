@@ -12,6 +12,11 @@
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
 
+            <Button Text="Go to Settings"
+                    Clicked="GoToSettings_Clicked"
+                    HorizontalOptions="Center" />
+
+
             <CollectionView ItemsSource="{Binding Sensors}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>

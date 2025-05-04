@@ -271,8 +271,15 @@ C:\Users\ibrah\Source\Repos\EnvMonitorApp-Group3\obj\Debug\net8.0-windows10.0.19
 C:\Users\ibrah\Source\Repos\EnvMonitorApp-Group3\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
 C:\Users\ibrah\Source\Repos\EnvMonitorApp-Group3\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
 C:\Users\ibrah\Source\Repos\EnvMonitorApp-Group3\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MauiApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ibrah\Source\Repos\EnvMonitorApp-Group3\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png
+C:\Users\ibrah\Source\Repos\EnvMonitorApp-Group3\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png
+C:\Users\ibrah\Source\Repos\EnvMonitorApp-Group3\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png
+C:\Users\ibrah\Source\Repos\EnvMonitorApp-Group3\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png
+C:\Users\ibrah\Source\Repos\EnvMonitorApp-Group3\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png
 C:\Users\ibrah\Source\Repos\EnvMonitorApp-Group3\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauisplash.stamp
 C:\Users\ibrah\Source\Repos\EnvMonitorApp-Group3\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauifont.stamp
+C:\Users\ibrah\Source\Repos\EnvMonitorApp-Group3\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf
+C:\Users\ibrah\Source\Repos\EnvMonitorApp-Group3\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf
 C:\Users\ibrah\Source\Repos\EnvMonitorApp-Group3\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png
 C:\Users\ibrah\Source\Repos\EnvMonitorApp-Group3\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png
 C:\Users\ibrah\Source\Repos\EnvMonitorApp-Group3\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png
