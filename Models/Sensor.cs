@@ -26,7 +26,7 @@ namespace MauiApp1.Models
         public AirQualitySensor(double latitude, double longtitude) :
         base("Air Quality Sensor", latitude,longtitude){}
 
-        public void AddReading (float no2, float so2, float pm25, float pm10)
+        public void AddReading (double no2, double so2, double pm25, double pm10)
         {
             airReadings.Add(new AirQualityReading(no2,so2,pm25,pm10));
         }
@@ -39,7 +39,7 @@ namespace MauiApp1.Models
         public WaterQualitySensor(double latitude, double longtitude):
         base("Water Quality Sensor", latitude, longtitude){} 
 
-        public void AddReading(float nitrate, float nitrite, float phosphate, float eColi)
+        public void AddReading(double nitrate, double nitrite, double phosphate, double eColi)
         {
             waterReadings.Add(new WaterQualityReading(nitrate, nitrite,  phosphate, eColi));
          
@@ -54,7 +54,7 @@ namespace MauiApp1.Models
         public WeatherQualitySensor(double latitude, double longtitude):
         base("Weather Quality Sensor", latitude, longtitude){}
 
-        public void AddReading(float temperature, float humidity, float windSpeed, float windDirection)
+        public void AddReading(double temperature, double humidity, double windSpeed, double windDirection)
         {
             weatherReadings.Add(new WeatherQualityReading(temperature, humidity, windSpeed, windDirection));
         }
