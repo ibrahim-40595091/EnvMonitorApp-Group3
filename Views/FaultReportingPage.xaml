@@ -7,7 +7,7 @@
 
     <VerticalStackLayout Padding="15" Spacing="10">
 
-        <Label Text="⚠️ Faulty Sensors" FontSize="20" FontAttributes="Bold" />
+        <Label Text="Faulty Sensors" FontSize="20" FontAttributes="Bold" />
 
         <CollectionView ItemsSource="{Binding FaultySensors}">
             <CollectionView.ItemTemplate>
@@ -28,7 +28,7 @@
             </CollectionView.ItemTemplate>
         </CollectionView>
 
-        <Label Text="🟢 Working Sensors" FontSize="20" FontAttributes="Bold" />
+        <Label Text="Working Sensors" FontSize="20" FontAttributes="Bold" />
 
         <CollectionView ItemsSource="{Binding WorkingSensors}">
             <CollectionView.ItemTemplate>
