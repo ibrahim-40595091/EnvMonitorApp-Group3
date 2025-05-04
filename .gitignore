@@ -1,0 +1,62 @@
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+
+.vs/
+
+.vscode/
+
+# MAUI SPECIFIC
+# Generated platform folders (Windows, Android, iOS, MacCatalyst)
+**/Platforms/Android/obj/
+**/Platforms/Android/bin/
+**/Platforms/iOS/obj/
+**/Platforms/iOS/bin/
+**/Platforms/MacCatalyst/obj/
+**/Platforms/MacCatalyst/bin/
+**/Platforms/Tizen/obj/
+**/Platforms/Tizen/bin/
+
+*.apk
+*.aab
+*.appx
+*.appxbundle
+*.msix
+*.msixbundle
+
+# iOS build artefacts
+*.app
+*.ipa
+build/
+
+# ENTITY FRAMEWORK EF CORE 
+**/*.db
+**/*.db-shm
+**/*.db-wal
+
+# LOGS & TEMP
+*.log
+*.tlog
+TestResults/
+# Windows crash dumps
+*.dmp
+
+
+# OS-SPECIFIC
+# macOS
+.DS_Store
+# Linux
+*~
+# Windows thumbnail / explorer
+Thumbs.db
+ehthumbs.db
+
+# IDE / EDITOR BACKUP FILES
+*.orig
+*.bak
+*.tmp
+*.swp
