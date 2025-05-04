@@ -1,4 +1,6 @@
-﻿namespace MauiApp1
+﻿using MauiApp1.ViewModels;
+
+namespace MauiApp1
 {
     public partial class MainPage : ContentPage
     {
@@ -7,8 +9,10 @@
         public MainPage()
         {
             InitializeComponent();
+            BindingContext = new MainViewModel();
         }
 
+        /*
         private void OnCounterClicked(object sender, EventArgs e)
         {
             count++;
@@ -20,6 +24,7 @@
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
+        */
     }
 
 }
