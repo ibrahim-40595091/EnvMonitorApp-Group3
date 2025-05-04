@@ -21,7 +21,6 @@
                                 <Label Text="{Binding LocationDisplay}" />
                                 <Label Text="{Binding MaintenanceDate, StringFormat='Maintenance: {0:MMMM dd, yyyy}'}"
                                        IsVisible="{Binding MaintenanceDate.HasValue}" />
-                                <!-- Optional placeholder for readings -->
                             </VerticalStackLayout>
                         </Frame>
                     </DataTemplate>
