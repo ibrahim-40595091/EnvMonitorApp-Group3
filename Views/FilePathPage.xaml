@@ -7,13 +7,13 @@
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
 
-     <Label Text="Air Quality Sensor File Path:" />
+     <Label Text="Air Quality Sensor Firmware Update:" />
             <Entry x:Name="AirFilePathEntry" Placeholder="/path/to/air.csv" />
 
-         <Label Text="Water Quality Sensor File Path:" />
+         <Label Text="Water Quality Sensor Firmware Update:" />
          <Entry x:Name="WaterFilePathEntry" Placeholder="/path/to/water.csv" />
 
-         <Label Text="Weather Quality Sensor File Path:" />
+         <Label Text="Weather Quality Sensor Firmware Update" />
             <Entry x:Name="WeatherFilePathEntry" Placeholder="/path/to/weather.csv" />
 
             <Button Text="Update Sensor Firmware"

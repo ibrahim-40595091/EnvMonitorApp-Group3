@@ -11,6 +11,7 @@ namespace MauiApp1
 
             // Show login page first
             MainPage = new LoginPage();
+            StartMaintenanceCheck();
 
         }
 

@@ -12,15 +12,14 @@ public partial class MaintenancePage : ContentPage
 
       private async void OnApplyClicked(object sender, EventArgs e)
     {
-        // Assuming these sensors are globally accessible or passed in — example only
-        foreach (var sensor in AppData.Sensors)  // You’ll define AppData.Sensors as shared list
+        foreach (var sensor in AppData.Sensors)  
         {
             if (sensor is AirQualitySensor)
-                sensor.MaintenanceDate = AirDatePicker.Date;
+                    sensor.MaintenanceDate = AirDatePicker.Date;
             else if (sensor is WaterQualitySensor)
-                sensor.MaintenanceDate = WaterDatePicker.Date;
+                    sensor.MaintenanceDate = WaterDatePicker.Date;
             else if (sensor is WeatherQualitySensor)
-                sensor.MaintenanceDate = WeatherDatePicker.Date;
+                      sensor.MaintenanceDate = WeatherDatePicker.Date;
         }
 
         await DisplayAlert("Success", "Maintenance dates updated!", "OK");
