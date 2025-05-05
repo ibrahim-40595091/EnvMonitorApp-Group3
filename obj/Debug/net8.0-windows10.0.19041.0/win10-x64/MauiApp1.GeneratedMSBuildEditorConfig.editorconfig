@@ -58,6 +58,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Views.FaultReport
 build_metadata.AdditionalFiles.TargetPath = Views\FaultReportingPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\FaultReportingPage.xaml
 
+[C:/Users/ibrah/Source/Repos/EnvMonitorApp-Group3/Views/HistoricalDataPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Views.HistoricalDataPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\HistoricalDataPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\HistoricalDataPage.xaml
+
 [C:/Users/ibrah/Source/Repos/EnvMonitorApp-Group3/Views/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Views.LoginPage.xaml

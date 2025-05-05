@@ -1,1 +1,0 @@
-C:\Users\ibrah\Source\Repos\EnvMonitorApp-Group3\MauiApp1.csproj;x64

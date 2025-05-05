@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:MauiApp1.ViewModels"
+             x:Class="MauiApp1.Views.HistoricalDataPage"
+             Title="Historical Data">
+
+    <ContentPage.BindingContext>
+        <vm:HistoricalDataViewModel />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Label Text="Select Sensor and Date Range" FontSize="18" />
+
+            <Picker ItemsSource="{Binding Sensors}" 
+                    ItemDisplayBinding="{Binding Name}" 
+                    SelectedItem="{Binding SelectedSensor}" />
+
+            <DatePicker Date="{Binding StartDate}" />
+            <DatePicker Date="{Binding EndDate}" />
+
+            <Button Text="Show Chart" Command="{Binding ShowChartCommand}" />
+
+            <Label Text="{Binding ChartLabel}" FontSize="18" HorizontalOptions="Center" />
+
+            <ScrollView Orientation="Horizontal" HeightRequest="200">
+                <HorizontalStackLayout BindableLayout.ItemsSource="{Binding ReadingValues}" Spacing="4" Padding="10">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+                            <VerticalStackLayout>
+                                <BoxView Color="CornflowerBlue"
+                                         HeightRequest="{Binding .}"
+                                         WidthRequest="20"
+                                         VerticalOptions="End" />
+                                <Label Text="{Binding .}" FontSize="10" HorizontalOptions="Center" />
+                            </VerticalStackLayout>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </HorizontalStackLayout>
+            </ScrollView>
+
+            <Button Text="Export CSV" Command="{Binding ExportCsvCommand}" />
+            <Button Text="Export PDF" Command="{Binding ExportPdfCommand}" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -36,6 +36,11 @@
     ContentTemplate="{DataTemplate views:SensorStatusPage}"
     Route="SensorStatusPage" />
 
+    <ShellContent
+    Title="Historical Data"
+    ContentTemplate="{DataTemplate views:HistoricalDataPage}"
+    Route="HistoricalDataPage" />
+
 
 
 

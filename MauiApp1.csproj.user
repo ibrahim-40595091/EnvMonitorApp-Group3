@@ -17,6 +17,9 @@
     <MauiXaml Update="Views\DataValidationPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\HistoricalDataPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\SensorStatusPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
