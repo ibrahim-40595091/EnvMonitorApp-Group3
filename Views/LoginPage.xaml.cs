@@ -2,7 +2,7 @@ namespace MauiApp1.Views;
 
 public partial class LoginPage : ContentPage
 {
-    private const string _appPassword = "Secure1234!";  // Your chosen password
+    private const string _appPassword = "Secure1234!";  
 
     public LoginPage()
     {
@@ -13,7 +13,7 @@ public partial class LoginPage : ContentPage
     {
         if (PasswordEntry.Text == _appPassword)
         {
-            Application.Current.MainPage = new AppShell(); // Navigate to main app
+            Application.Current.MainPage = new AppShell(); 
         }
         else
         {
