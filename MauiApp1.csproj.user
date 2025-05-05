@@ -14,6 +14,9 @@
     <MauiXaml Update="Views\FaultReportingPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\DataValidationPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\UserManagementPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

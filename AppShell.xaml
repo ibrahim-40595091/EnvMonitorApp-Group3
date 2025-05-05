@@ -27,6 +27,10 @@
               ContentTemplate="{DataTemplate views:FaultReportingPage}"
               Route="FaultReportingPage" />
 
+    <ShellContent Title="Validate Data"
+              ContentTemplate="{DataTemplate views:DataValidationPage}"
+              Route="DataValidationPage" />
+
 
 
 </Shell>

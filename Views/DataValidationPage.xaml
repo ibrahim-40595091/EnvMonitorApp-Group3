@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:MauiApp1.ViewModels"
+             x:Class="MauiApp1.Views.DataValidationPage"
+             Title="Validate Sensor Data">
+
+    <ContentPage.BindingContext>
+        <vm:DataValidationViewModel />
+    </ContentPage.BindingContext>
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+
+        <Label Text="Select Date Range" FontSize="18" />
+
+        <DatePicker x:Name="StartDate" />
+        <DatePicker x:Name="EndDate" />
+
+        <Button Text="Check Data Validity" Clicked="CheckDataClicked" />
+
+        <CollectionView ItemsSource="{Binding Sensors}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BorderColor="Gray" Padding="10" Margin="5">
+                        <HorizontalStackLayout>
+                            <VerticalStackLayout>
+                                <Label Text="{Binding Name}" FontAttributes="Bold" />
+                                <Label Text="{Binding LocationDisplay}" />
+                            </VerticalStackLayout>
+                            <Label Text="{Binding ValidityStatus}"
+                                   TextColor="White"
+                                   BackgroundColor="{Binding BadgeColor}"
+                                   Padding="5"
+                                   HorizontalOptions="EndAndExpand"
+                                   VerticalOptions="Center" />
+                        </HorizontalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </VerticalStackLayout>
+</ContentPage>

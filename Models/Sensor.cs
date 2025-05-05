@@ -4,6 +4,7 @@ namespace MauiApp1.Models
 {
     public abstract class Sensor
     {
+
         public string Name {get; set;}
        // public string sensorType {get;set;}
         public  double Latitude {get; set;}
@@ -60,4 +61,5 @@ namespace MauiApp1.Models
             weatherReadings.Add(new WeatherQualityReading(temperature, humidity, windSpeed, windDirection));
         }
      }
+
 }
