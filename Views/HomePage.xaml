@@ -9,5 +9,10 @@
                 Clicked="OnShowSensorsClicked"
                 FontSize="20"
                 HorizontalOptions="Center" />
+
+            <Button Text="Set Maintenance Dates"
+            Clicked="OnSetMaintenanceClicked"
+            FontSize="20"
+            HorizontalOptions="Center" />
     </VerticalStackLayout>
 </ContentPage>

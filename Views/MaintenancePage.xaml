@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Views.MaintenancePage"
+             Title="Set Maintenance Dates">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Label Text="Air Sensor Maintenance Date:" />
+            <DatePicker x:Name="AirDatePicker" />
+
+            <Label Text="Water Sensor Maintenance Date:" />
+            <DatePicker x:Name="WaterDatePicker" />
+
+            <Label Text="Weather Sensor Maintenance Date:" />
+            <DatePicker x:Name="WeatherDatePicker" />
+
+            <Button Text="Apply Dates"
+                    Clicked="OnApplyClicked"
+                    BackgroundColor="LightGreen"
+                    HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

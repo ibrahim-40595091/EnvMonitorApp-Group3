@@ -11,6 +11,7 @@ namespace MauiApp1.Views
         public MainPage()
         {
             InitializeComponent();
+            
             BindingContext = new MainViewModel();
         }
       
@@ -20,7 +21,9 @@ namespace MauiApp1.Views
         {
             await DisplayAlert(
                 "Sensor Information",
+
                 $"Location: {sensor.Location}\nLatitude: {sensor.Latitude:F4}\nLongitude: {sensor.Longtitude:F4}",
+
                 "OK");
         }
     }
