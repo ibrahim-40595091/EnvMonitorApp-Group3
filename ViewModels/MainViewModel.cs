@@ -9,18 +9,18 @@ namespace MauiApp1.ViewModels
 
         public MainViewModel()
         {
-            var airSensor = new AirQualitySensor(51.5074, -0.1278);
-            var waterSensor = new WaterQualitySensor(37.7749, -122.4194); 
-            var weatherSensor = new WeatherQualitySensor(48.8566, 2.3522); 
+            var airSensor = new AirQualitySensor(55.94476, -3.183991, "Edinburgh : Agglomeration Edin Urban Area : Zone - Central Scotland : Site Type - Urban Traffic");
+            var waterSensor = new WaterQualitySensor(55.8611, -3.2539, " Site Name : Glencose B"); 
+            var weatherSensor = new WeatherQualitySensor(55.008785,-3.5856323, "Time zone - GMT"); 
 
-            airSensor.AddReading(40.5f, 15.2f, 22.1f, 30.0f);
-            airSensor.AddReading(38.7f, 14.5f, 24.6f, 29.1f);
+            airSensor.AddReading(26.3925, 1.59654, 5.094, 8.3);
+            airSensor.AddReading(22.5675, 1.33045, 5.094, 7.9);
 
-            waterSensor.AddReading(2.5f, 0.7f, 1.2f, 10.0f);
-            waterSensor.AddReading(2.8f, 0.5f, 1.5f, 8.7f);
+            waterSensor.AddReading(26.33, 1.33, 0.07, 0);
+            waterSensor.AddReading(23.4, 1.52, 0.06, 0);
 
-            weatherSensor.AddReading(18.5f, 65.0f, 12.3f, 270.0f);
-            weatherSensor.AddReading(20.1f, 60.0f, 14.0f, 290.0f);
+            weatherSensor.AddReading(0.6, 98, 1.18, 78);
+            weatherSensor.AddReading(2.4, 96, 0.93, 106);
 
             airSensor.MaintenanceDate = DateTime.Now.AddDays(30);
             weatherSensor.MaintenanceDate = DateTime.Now.AddDays(45);

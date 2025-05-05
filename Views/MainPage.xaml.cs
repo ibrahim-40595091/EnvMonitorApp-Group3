@@ -1,6 +1,8 @@
 ﻿using MauiApp1.ViewModels;
+using MauiApp1.Models;  
 
-namespace MauiApp1
+
+namespace MauiApp1.Views
 {
     public partial class MainPage : ContentPage
     {
@@ -11,20 +13,17 @@ namespace MauiApp1
             InitializeComponent();
             BindingContext = new MainViewModel();
         }
-
-        /*
-        private void OnCounterClicked(object sender, EventArgs e)
+      
+    private async void OnSensorButtonClicked(object sender, EventArgs e)
+    {
+        if (sender is Button button && button.CommandParameter is Sensor sensor)
         {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            await DisplayAlert(
+                "Sensor Information",
+                $"Location: {sensor.Location}\nLatitude: {sensor.Latitude:F4}\nLongitude: {sensor.Longtitude:F4}",
+                "OK");
         }
-        */
+    }
     }
 
 }

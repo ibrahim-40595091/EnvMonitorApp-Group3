@@ -6,9 +6,9 @@ namespace MauiApp1.Models
         public double Temperature { get; set; }
         public double Humidity { get; set; }
         public double WindSpeed { get; set; }
-        public double WindDirection { get; set; }
+        public int WindDirection { get; set; }
 
-        public WeatherQualityReading(double temperature, double humidity, double windSpeed, double windDirection)
+        public WeatherQualityReading(double temperature, double humidity, double windSpeed, int windDirection)
         {
             Timestamp = DateTime.Now;
             Temperature = temperature;
