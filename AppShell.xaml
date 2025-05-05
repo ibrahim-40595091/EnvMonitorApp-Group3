@@ -45,4 +45,9 @@
               ContentTemplate="{DataTemplate views:EnvironmentalReportsPage}"
               Route="EnvironmentalReportsPage" />
 
+    <ShellContent Title="Manage Sensors"
+              ContentTemplate="{DataTemplate views:SensorManagementPage}"
+              Route="SensorManagementPage" />
+
+
 </Shell>

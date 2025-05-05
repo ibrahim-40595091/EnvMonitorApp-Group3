@@ -23,6 +23,9 @@
     <MauiXaml Update="Views\EnvironmentalReportsPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\SensorManagementPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\SensorStatusPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
