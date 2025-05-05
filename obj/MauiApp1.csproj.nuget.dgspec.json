@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ibrah\\Source\\Repos\\EnvMonitorApp-Group3\\MauiApp1.csproj": {}
+    "C:\\Users\\ibrah\\source\\repos\\EnvMonitorApp-Group3\\MauiApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ibrah\\Source\\Repos\\EnvMonitorApp-Group3\\MauiApp1.csproj": {
+    "C:\\Users\\ibrah\\source\\repos\\EnvMonitorApp-Group3\\MauiApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ibrah\\Source\\Repos\\EnvMonitorApp-Group3\\MauiApp1.csproj",
+        "projectUniqueName": "C:\\Users\\ibrah\\source\\repos\\EnvMonitorApp-Group3\\MauiApp1.csproj",
         "projectName": "MauiApp1",
-        "projectPath": "C:\\Users\\ibrah\\Source\\Repos\\EnvMonitorApp-Group3\\MauiApp1.csproj",
+        "projectPath": "C:\\Users\\ibrah\\source\\repos\\EnvMonitorApp-Group3\\MauiApp1.csproj",
         "packagesPath": "C:\\Users\\ibrah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ibrah\\Source\\Repos\\EnvMonitorApp-Group3\\obj\\",
+        "outputPath": "C:\\Users\\ibrah\\source\\repos\\EnvMonitorApp-Group3\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
