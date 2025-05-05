@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Monitor App Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Locate and Navigate to Sensors</h1>
+    <p>This documentation outlines the implementation for the Issue that allows users to locate and navigate to sensors.</p>
+
+    <h2>Overview</h2>
+    <p>The purpose of this feature is to help users locate sensors and navigate to them. Each sensor has associated latitude and longitude values that are displayed to the user when they click the appopriate sensor in the view</p>
+
+    <h2>Key Components</h2>
+    <ul>
+        <li><strong>LoginPage</strong>: Login page for the user to login </li>
+	 <li><strong>HomePage</strong>: This page contains a button labeled "Navigate and Locate Sensors". When pressed, it takes the user to page with the sensor information.</li>
+        <li><strong>AppData</strong>: Holds a shared list of sensor objects, each containing name, latitude, longitude, and location data.</li>
+    </ul>
+
+    <h2>User Flow</h2>
+    <ul>
+        <li>The user opens the app to the Login page and logs in.</li>
+        <li>The user then selects the Navigate and locate sensor option.</li>
+        <li>Which then displays the three sensors fo the user to see </li>
+        <li>Then clicking on a sensor reveals information regarding the sensor, its location etc.</li>
+    </ul>
+
+    <h2>Outcome</h2>
+    <p>This feature improves the app’s usability by helping users identify where sensors are so that they can perform maintenance move the sensor, replace it etc. </p>
+</body>
+</html>
