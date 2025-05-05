@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Mon App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Schedule Maintenance for Sensors</h1>
+    <p>This documentation outlines the implementation for the Issue that allows users to set a  maintenance date for each sensor.</p>
+
+    <h2>Overview</h2>
+    <p>This feature provides a user interface that allows maintenance scheduling for all sensor types — air, water, and weather. It ensures that users can schedule a maintenance date and also there is a method  that checks wether maintenance is due for a sensor today in the background.</p>
+
+    <h2>Key Components</h2>
+    <ul>
+        <li><strong>MaintenancePage</strong>: This page displays three date pickers, one for each sensor type, and a button labeled "Apply".</li>
+        <li><strong>Sensor Classes</strong>: Each sensor type includes a <code>MaintenanceDate</code> property which stores the selected date.</li>
+        <li><strong>AppData</strong>: Maintains a shared collection of sensor objects, allowing the maintenance dates to be updated globally.</li>
+    </ul>
+
+    <h2>User Flow</h2>
+    <ul>
+        <li>The user logins from the LoginPage.</li>
+        <li>The user navigates to the Maintenance Page via the Home Page.</li>
+        <li>The page displays one date picker for each sensor type.</li>
+        <li>The user selects a desired maintenance date for each sensor.</li>
+        <li>Upon clicking the "Apply" button:
+            <ul>
+                <li>The chosen dates are saved to the corresponding sensors.</li>
+                <li>A confirmation message is shown to the user.</li>
+                <li>The app navigates back to the Home Page.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Outcome</h2>
+    <p>Users can plan maintenance for the sensors well in advance, makig sure sensors stay working and also checks to see if a sensor is due for maintenance so that the user is always alerted.</p>
+</body>
+</html>
