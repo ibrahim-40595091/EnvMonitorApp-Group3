@@ -9,6 +9,7 @@ public partial class HomePage : ContentPage
         InitializeComponent();
     }
 
+    // On click methods to call views according to the button pressed
     private async void OnShowSensorsClicked(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new MainPage());

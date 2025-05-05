@@ -6,10 +6,13 @@ public static class AppData
     public static ObservableCollection<Sensor> Sensors {get; set;}
     static AppData()
     {
+        // Adding 3 sensors 
         var airSensor = new AirQualitySensor(55.94476, -3.183991, "Edinburgh : Agglomeration Edin Urban Area : Zone - Central Scotland : Site Type - Urban Traffic");
         var waterSensor = new WaterQualitySensor(55.8611, -3.2539, " Site Name : Glencose B"); 
         var weatherSensor = new WeatherQualitySensor(55.008785,-3.5856323, "Time zone - GMT"); 
 
+
+        // Adding readings for each sensor 
         airSensor.AddReading(26.3925, 1.59654, 5.094, 8.3);
         airSensor.AddReading(22.5675, 1.33045, 5.094, 7.9);
 
@@ -19,10 +22,8 @@ public static class AppData
         weatherSensor.AddReading(0.6, 98, 1.18, 78);
         weatherSensor.AddReading(2.4, 96, 0.93, 106);
 
-        airSensor.MaintenanceDate = DateTime.Now.AddDays(30);
-        weatherSensor.MaintenanceDate = DateTime.Now.AddDays(45);
-            // waterSensor.MaintenanceDate = null; // not yet scheduled
 
+        // Adding the sensors to a collection for ease of use 
         Sensors = new ObservableCollection<Sensor>
          {
             airSensor,

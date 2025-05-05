@@ -6,7 +6,6 @@ namespace MauiApp1.Views
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
 
         public MainPage()
         {
@@ -15,8 +14,10 @@ namespace MauiApp1.Views
             BindingContext = new MainViewModel();
         }
       
+    // When sensor button is clicked perform the action 
     private async void OnSensorButtonClicked(object sender, EventArgs e)
     {
+        // Checks if the object triggered was a button and also checks if it is a sensor if it is a sensor then it assigns itself the variable
         if (sender is Button button && button.CommandParameter is Sensor sensor)
         {
             await DisplayAlert(

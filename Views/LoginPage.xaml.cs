@@ -2,6 +2,7 @@ namespace MauiApp1.Views;
 
 public partial class LoginPage : ContentPage
 {
+    // Password
     private const string _appPassword = "Secure1234!";  
 
     public LoginPage()
@@ -9,6 +10,7 @@ public partial class LoginPage : ContentPage
         InitializeComponent();
     }
 
+    // action for when login is initiated 
     private async void LoginButtonClicked(object sender, EventArgs e)
     {
         if (PasswordEntry.Text == _appPassword)

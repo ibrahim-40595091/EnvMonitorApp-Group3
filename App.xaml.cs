@@ -11,10 +11,13 @@ namespace MauiApp1
 
             // Show login page first
             MainPage = new LoginPage();
+            // Strats the maintenance check method taht runs on a timer 
             StartMaintenanceCheck();
 
         }
 
+
+        // Every time the timer ticks this method is called bythe check.Tick+= OnTimerTick
         private void OnTimerTick(object? sender, EventArgs e)
         {
             foreach(var sensor in AppData.Sensors)
@@ -26,10 +29,14 @@ namespace MauiApp1
             }
         }
 
+
          private void StartMaintenanceCheck()
             {
+            // creates a timer 
             check = Dispatcher.CreateTimer();
+            // sets the interval
             check.Interval = TimeSpan.FromSeconds(10);
+            // calls method once timer ticks
             check.Tick += OnTimerTick;
             }
     }

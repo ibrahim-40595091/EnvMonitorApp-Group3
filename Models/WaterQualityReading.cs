@@ -2,6 +2,7 @@ namespace MauiApp1.Models
 {
     public class WaterQualityReading
     {
+          // gettng and setting variables for each reading
         public DateTime Timestamp { get; set; }
         public double Nitrate { get; set; }
         public double Nitrite { get; set; }
