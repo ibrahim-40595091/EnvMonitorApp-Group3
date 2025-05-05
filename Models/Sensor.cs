@@ -9,6 +9,7 @@ namespace MauiApp1.Models
         public  double Latitude {get; set;}
         public double Longtitude{get; set;}
         public string Location{get;set;}
+        public string? FilePath{get;set;}
         public DateTime? MaintenanceDate {get; set;}
 
 

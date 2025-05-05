@@ -18,5 +18,10 @@ public partial class HomePage : ContentPage
     {
     await Navigation.PushAsync(new MaintenancePage());
     }
+
+    private async void OnSetFilePathClicked(object sender, EventArgs e)
+    {
+    await Navigation.PushAsync(new FilePathPage());
+    }
     
 }

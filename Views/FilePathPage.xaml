@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Views.FilePathPage"
+             Title="Set Sensor File Paths">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+     <Label Text="Air Quality Sensor File Path:" />
+            <Entry x:Name="AirFilePathEntry" Placeholder="/path/to/air.csv" />
+
+         <Label Text="Water Quality Sensor File Path:" />
+         <Entry x:Name="WaterFilePathEntry" Placeholder="/path/to/water.csv" />
+
+         <Label Text="Weather Quality Sensor File Path:" />
+            <Entry x:Name="WeatherFilePathEntry" Placeholder="/path/to/weather.csv" />
+
+            <Button Text="Update Sensor Firmware"
+                    Clicked="OnSaveFilePathsClicked"
+                 BackgroundColor="LightGreen"
+                    HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

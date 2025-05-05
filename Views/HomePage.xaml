@@ -10,9 +10,14 @@
                 FontSize="20"
                 HorizontalOptions="Center" />
 
-            <Button Text="Set Maintenance Dates"
+        <Button Text="Set Maintenance Dates"
             Clicked="OnSetMaintenanceClicked"
             FontSize="20"
             HorizontalOptions="Center" />
+
+         <Button Text="Set Sensor File Path for updating firmware"
+             Clicked="OnSetFilePathClicked"
+             FontSize="20"
+             HorizontalOptions="Center" />
     </VerticalStackLayout>
 </ContentPage>

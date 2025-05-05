@@ -6,18 +6,18 @@
 
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
-            <Label Text="Air Sensor Maintenance Date:" />
+              <Label Text="Air Sensor Maintenance Date:" />
             <DatePicker x:Name="AirDatePicker" />
 
-            <Label Text="Water Sensor Maintenance Date:" />
+                <Label Text="Water Sensor Maintenance Date:" />
             <DatePicker x:Name="WaterDatePicker" />
 
-            <Label Text="Weather Sensor Maintenance Date:" />
+              <Label Text="Weather Sensor Maintenance Date:" />
             <DatePicker x:Name="WeatherDatePicker" />
 
             <Button Text="Apply Dates"
-                    Clicked="OnApplyClicked"
-                    BackgroundColor="LightGreen"
+                     Clicked="OnApplyClicked"
+                  BackgroundColor="LightGreen"
                     HorizontalOptions="Center" />
         </VerticalStackLayout>
     </ScrollView>
