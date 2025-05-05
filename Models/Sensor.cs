@@ -20,6 +20,20 @@ namespace MauiApp1.Models
             this.MaintenanceDate = null;
         }
         public string LocationDisplay => $"Lat: {Latitude:F4}, Lon: {Longtitude:F4}";
+
+        public DateTime LastReadingTime { get; set; } = DateTime.Now;
+
+        public string OperationalStatus
+        {
+            get
+            {
+                var minutesAgo = (DateTime.Now - LastReadingTime).TotalMinutes;
+                if (minutesAgo < 5) return "OK";
+                if (minutesAgo < 15) return "Risk";
+                return "Issue";
+            }
+        }
+
     }
 
     public class AirQualitySensor : Sensor
@@ -31,6 +45,7 @@ namespace MauiApp1.Models
         public void AddReading (float no2, float so2, float pm25, float pm10)
         {
             airReadings.Add(new AirQualityReading(no2,so2,pm25,pm10));
+            LastReadingTime = DateTime.Now;
         }
     }
 
@@ -44,8 +59,9 @@ namespace MauiApp1.Models
         public void AddReading(float nitrate, float nitrite, float phosphate, float eColi)
         {
             waterReadings.Add(new WaterQualityReading(nitrate, nitrite,  phosphate, eColi));
-         
-            
+            LastReadingTime = DateTime.Now;
+
+
         }
      }
 
@@ -59,7 +75,10 @@ namespace MauiApp1.Models
         public void AddReading(float temperature, float humidity, float windSpeed, float windDirection)
         {
             weatherReadings.Add(new WeatherQualityReading(temperature, humidity, windSpeed, windDirection));
+            LastReadingTime = DateTime.Now;
         }
      }
+
+
 
 }
