@@ -1,0 +1,45 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Views.EnvironmentalReportsPage"
+             Title="Environmental Reports">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <Label Text="Environmental Summary Report" FontSize="24" HorizontalOptions="Center" />
+
+            <!-- Air Report -->
+            <Frame BorderColor="DarkBlue" Padding="10">
+                <Label Text="Air Quality Summary" FontSize="20" FontAttributes="Bold" />
+                <Label Text="Avg NO2: 25.5 µg/m³" />
+                <Label Text="Avg SO2: 10.2 µg/m³" />
+                <Label Text="Avg PM2.5: 12.7 µg/m³" />
+                <Label Text="Avg PM10: 20.1 µg/m³" />
+            </Frame>
+
+            <!-- Water Report -->
+            <Frame BorderColor="DarkGreen" Padding="10">
+                <Label Text="Water Quality Summary" FontSize="20" FontAttributes="Bold" />
+                <Label Text="Avg Nitrate: 2.1 mg/L" />
+                <Label Text="Avg Nitrite: 0.8 mg/L" />
+                <Label Text="Avg Phosphate: 1.5 mg/L" />
+                <Label Text="Avg E.Coli: 5.3 CFU/100mL" />
+            </Frame>
+
+            <!-- Weather Report -->
+            <Frame BorderColor="DarkOrange" Padding="10">
+                <Label Text="Weather Summary" FontSize="20" FontAttributes="Bold" />
+                <Label Text="Avg Temperature: 18.6 °C" />
+                <Label Text="Avg Humidity: 67%" />
+                <Label Text="Avg Wind Speed: 10.3 km/h" />
+            </Frame>
+
+            <!-- Export Buttons -->
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="20">
+                <Button Text="Export to CSV" Clicked="OnExportCsvClicked" />
+                <Button Text="Export to PDF" Clicked="OnExportPdfClicked" />
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

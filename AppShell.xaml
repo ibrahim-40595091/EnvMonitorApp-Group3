@@ -41,8 +41,8 @@
     ContentTemplate="{DataTemplate views:HistoricalDataPage}"
     Route="HistoricalDataPage" />
 
-
-
-
+    <ShellContent Title="Reports"
+              ContentTemplate="{DataTemplate views:EnvironmentalReportsPage}"
+              Route="EnvironmentalReportsPage" />
 
 </Shell>

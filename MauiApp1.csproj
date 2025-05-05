@@ -75,6 +75,9 @@
 	  <Compile Update="Views\HistoricalDataPage.xaml.cs">
 	    <DependentUpon>HistoricalDataPage.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Views\EnvironmentalReportsPage.xaml.cs">
+	    <DependentUpon>EnvironmentalReportsPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Views\SensorStatusPage.xaml.cs">
 	    <DependentUpon>SensorStatusPage.xaml</DependentUpon>
 	  </Compile>
@@ -94,6 +97,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\HistoricalDataPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\EnvironmentalReportsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\SensorStatusPage.xaml">
