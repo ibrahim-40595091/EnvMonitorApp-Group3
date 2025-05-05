@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Data Monitor Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Update Sensor Firmware</h1>
+    <p>This documentation explains the implementation of the issue that allows users to specify a file path for uploading or referencing a firmware update for each sensor.</p>
+
+    <h2>Overview</h2>
+    <p>The goal of this issue is to prepare sensors for firmware updates by allowing users to manually provide a file path. This path could point to a local or remote file containing the update instructions or software.</p>
+
+    <h2>Key Components</h2>
+    <ul>
+        <li><strong>FilePathPage</strong>: A dedicated page that presents three input fields (one for each sensor type) where users can type or paste a file path that contains the required firmware update.</li>
+        <li><strong>Sensor Classes</strong>: Each sensor class includes a FilePath property that stores the provided path as a string.</li>
+        <li><strong>AppData</strong>: Holds all sensor instances in memory, making the file path accessible for later use when a firmware update is triggered.</li>
+    </ul>
+
+    <h2>User Flow</h2>
+    <ul>
+        <li>The user navigates to the HomePage after logging in.</li>
+        <li>The user navigates to the File Path Page via the Home Page.</li>
+        <li>Each section of the page contains an input field corresponding to one of the sensor types: air , water , or weather.</li>
+        <li>The user enters the file path where the firmware update file is located.</li>
+        <li>When the "Save File Paths" button is clicked:
+            <ul>
+                <li>The values entered are assigned to the FilePath property of each respective sensor.</li>
+                <li>A success message is shown confirming the values were saved.</li>
+                <li>The app returns to the Home Page.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Outcome</h2>
+    <p>This issue provides the user with a simple interface to prepare sensors for firmware updates by associating them with a file path. If needed the system can then retrieve these filepaths to use when a firmware update is triggered</p>
+</body>
+</html>
